@@ -12,10 +12,6 @@ Provided by Dataquest 2025 (Universitas Airlangga).
 - `test.csv`  (6,666 rows): text only  
 - `sample_submission.csv`
 
-> Put them under `data/raw/`.
-
----
-
 ---
 
 ## 🧰 Setup
