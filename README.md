@@ -18,12 +18,13 @@ Provided by Dataquest 2025 (Universitas Airlangga).
 ---
 
 ## 🏗️ Repo Structure
+```bash
 notebooks/ # exploratory & training notebooks
 scripts/ # CLI scripts (clean → fe → train → calibrate → infer)
 configs/ # default config (paths, params)
 data/{raw,interim,processed}
 models/ # saved LGBM models per fold (optional)
-
+```
 ---
 
 ## 🧰 Setup
