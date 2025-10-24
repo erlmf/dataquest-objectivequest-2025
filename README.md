@@ -3,7 +3,6 @@
 Hybrid NLP regression to predict **imprisonment duration (months)** from Indonesian court verdicts.  
 Model = **TF-IDF + domain numeric + BERT embeddings + Target Encoding → LightGBM**, with **GroupKFold** and **linear calibration**.
 
-> **Leaderboard**: **17th / 109 (Public)** and **25th / 109 (Private)**.
 
 ---
 
@@ -17,21 +16,13 @@ Provided by Dataquest 2025 (Universitas Airlangga).
 
 ---
 
-## 🏗️ Repo Structure
-```bash
-notebooks/ # exploratory & training notebooks
-scripts/ # CLI scripts (clean → fe → train → calibrate → infer)
-configs/ # default config (paths, params)
-data/{raw,interim,processed}
-models/ # saved LGBM models per fold (optional)
-```
 ---
 
 ## 🧰 Setup
 
 ```bash
-git clone https://github.com/<username>/indo-sentencing-nlp.git
-cd indo-sentencing-nlp
+git clone https://github.com/erlmf/dataquest-objectivequest-2025.git
+cd dataquest-objectivequest-2025
 python -m venv .venv && source .venv/bin/activate   # (Windows: .venv\Scripts\activate)
 
 Minimal GPU not required (BERT embeddings can be precomputed or reduced via SVD).
